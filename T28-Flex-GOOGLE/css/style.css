@@ -1,68 +1,117 @@
 body {
-  font-family: sans-serif;
+  margin: auto 0;
+  height: 935px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 header {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
-.usuario {
-  border-radius: 4vh;
-}
-ul {
-  list-style: none;
-  display: inline-block;
-}
-li {
-  display: inline-block;
-  margin-right: 10px;
-}
-a {
-  color: rgb(87, 86, 86);
-}
-li:hover {
-  text-decoration: underline;
-}
-.derecha {
-  float: right;
-  margin-right: 20px;
-}
-.google {
-  width: 600px;
-  height: 400px;
-  margin: 0px auto;
-  text-align: center;
-}
-.button {
-  background-color: rgb(241, 241, 241);
-  border: 1px solid white;
-  border-radius: 5px;
-  padding: 7px;
-}
-.button:hover {
-  border: gray 1px solid;
-  display: inline-block;
-}
-span {
-  color: blue;
-}
-span:hover {
-  text-decoration: underline;
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 footer {
-  background-color: rgb(241, 241, 241);
-  position: absolute;
-  bottom: 5px;
-  width: 99%;
-  color: rgb(80, 80, 80);
+  background-color: #f2f2f2;
 }
-.barraEspaña {
-  border-bottom: 1px solid rgb(194, 189, 189);
+.superior {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
 }
-p {
-  padding-left: 15px;
+.superior > div {
+  padding: 5px 10px;
 }
-.padding {
-  padding-left: 10px;
+.centro {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.emision{
-/*??????????*/
+.logo {
+  text-align: center;
+  background-color: blue;
+  width: 50vw;
+  height: 15vh;
+}
+.barra_busq {
+  text-align: center;
+  background-color: rgb(28, 231, 55);
+  width: 50vw;
+  height: 10vh;
+}
+.botones {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.botones > div {
+  padding: 20px 15px;
+  margin: 5px;
+  background-color: #f8f9fa;
+  border: solid #f8f9fa 1px;
+}
+.botones > div:hover {
+  border: solid rgb(12, 142, 175) 1px;
+  cursor: pointer;
+}
+main > p > a {
+  text-decoration: none;
+}
+.barra
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+  border-radius: 25px;
+  padding: 0 25px;
+  height: 50px;
+  color: black;
+  width: 70%;
+  border: solid rgba(0, 0, 0, 0.103) 1px;
+  margin: 25px 0;
+}
+.barra > input
+{
+  border: none;
+  width: 90%;
+  height: 75%;
+}
+.inferior {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  border-top: solid #dddddd 1px;
+}
+.inferior > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.inferior > div > div, .españa {
+  margin: 0 15px;
+}
+footer > div {
+  padding: 20px;
 }
